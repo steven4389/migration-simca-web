@@ -1,0 +1,28 @@
+.tabs {
+    width:98%;
+    margin: 10px;
+    display: inline-flex;
+    margin-top: 2rem;
+  }
+  
+  .tab {
+    padding: 10px;
+    text-align: center;
+    color: var(--title);
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid var(--gray);
+  }
+  
+  .tabSelected{
+    padding: 10px;
+    text-align: center;
+    color: var(--secondaryGray);
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    border-top:1px solid var(--gray);
+    border-left:1px solid var(--gray);
+    border-right:1px solid var(--gray);
+  }
+  

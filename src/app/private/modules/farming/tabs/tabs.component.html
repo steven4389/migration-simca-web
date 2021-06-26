@@ -1,0 +1,10 @@
+<div class="tabs">
+    <div *ngFor="let subModule of subModules" style="width:100%">
+      <div (click)="selectSubmodule(subModule)"
+        [ngClass]="subModuleSelected === subModule ? 'tabSelected': 'tab'" class="tab">
+        {{subModule}}
+      </div>
+    </div>
+  </div>
+  
+  

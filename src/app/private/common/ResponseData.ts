@@ -7,10 +7,10 @@ export class ResponseData {
 
    constructor( data:
       {
-         role?: string,
-         username?: string
-         empresa?: string
-         sedes?: Array<any>
+         role: string,
+         username: string
+         empresa: string
+         sedes: Array<any>
       }
    ){
       this.role = data.role;

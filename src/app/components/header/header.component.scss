@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    // position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: var(--dark);
+}
+
+.headerMenu{
+    display:inline-flex;
+    color: var(--title);
+    padding-top: 2rem;
+}

@@ -4,14 +4,14 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class UserService {
 
-  private isUserLoggedIn;
-  public usserLogged;
+  private isUserLoggedIn:any;
+  public usserLogged:any;
 
   constructor() {
     this.isUserLoggedIn = false;
   }
 
-  setUserLoggedIn(user) {
+  setUserLoggedIn(user:any) {
     console.log(user)
     this.isUserLoggedIn = true;
     this.usserLogged = user;
@@ -20,7 +20,7 @@ export class UserService {
   }
 
   getUserLoggedIn() {
-    return JSON.parse(localStorage.getItem('token'));
+    return JSON.parse(localStorage.getItem('token') || '{}');
   }
 
 

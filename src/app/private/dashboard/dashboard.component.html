@@ -1,0 +1,19 @@
+<div class="row dashboard ml-0 mr-0 pl-0 pr-0">
+    <div class="col-0 col-md-2 col-lg-2 ml-0 mr-0 pl-0 pr-0 menu">
+        <div (click)="selectModule(INVENTORY)" class="module">
+            <h6>{{INVENTORY}}<i style="float: right" class="fas fa-dolly"></i></h6>
+        </div>
+        <div (click)="selectModule(FARMING)" class="module">
+            <h6>{{FARMING}}<i style="float: right" class="fas fa-seedling"></i></h6>
+        </div>
+    </div>
+    <div class="col-12 col-md-10 col-lg-10 ml-0 mr-0 pl-0 pr-0 board">
+        <!-- <div *ngIf="selectedModule === FARMING">
+            <app-cultivo></app-cultivo>
+        </div>
+        <div *ngIf="selectedModule === INVENTORY">
+            <app-inventario></app-inventario>
+        </div> -->
+        <router-outlet></router-outlet>
+    </div>
+</div>

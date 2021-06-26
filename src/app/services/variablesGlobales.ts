@@ -1,22 +1,24 @@
 import { Injectable } from '@angular/core';
 import {insumos} from '../models/insumos';
-import {fechas} from '../private/common/fechas'
+import Fechas from '../private/common/Fechas'
 
 @Injectable()
-export class variablesGlobales{
-    public insumoAeditar:insumos
-    public titulo:string
-    public isLogin:boolean
-    public accion:string
-    public dateBefore:Date
-    public dateAfter:Date
-    public uso:string
-    public id:string
-    public nombre:string
-    public rutaPagina:string
+export class variablesGlobales extends Fechas{
+    // public insumoAeditar:insumos
+    public titulo:string = '';
+    public isLogin:boolean =false;
+    public accion:string = '';
+    public dateBefore:Date = new Date;
+    public dateAfter:Date = new Date;
+    public uso:string = '';
+    public id:string = '';
+    public nombre:string = '';
+    public rutaPagina:string = '';
     
     
-    constructor(private _fechas:fechas){}
+    constructor(){
+        super();
+    }
 
     getRutaPagina(){
         let data = this.rutaPagina
@@ -60,10 +62,10 @@ export class variablesGlobales{
     }
 
     getdateBefore(){
-      return this._fechas.ChangeDateFormat(this.dateBefore)
+      return this.ChangeDateFormat(this.dateBefore)
     }
 
     getdateAfter(){
-     return this._fechas.ChangeDateFormat(this.dateAfter)
+     return this.ChangeDateFormat(this.dateAfter)
     }
 }

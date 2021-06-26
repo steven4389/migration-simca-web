@@ -1,0 +1,29 @@
+.menu {
+    padding-top: 1rem;
+    border-right: 1px solid var(--gray);
+    margin: 0
+}
+
+.board {
+    margin: 0
+}
+
+.dashboard {
+    height: 91vh;
+    margin: 0
+}
+
+h6{
+    font-size:20px;
+    color: var(--title);
+    font-family: 'Encode Sans'
+}
+
+.module{
+    cursor: pointer;
+    padding:10px;
+}
+
+h6:hover{
+    font-size:22px;
+}

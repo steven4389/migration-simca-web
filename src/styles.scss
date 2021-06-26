@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+:root {
+    /*Titulos*/
+    --title: rgb(150, 147, 147);
+
+    /*colors*/
+    --green: rgb(135 186 24);
+    --secundaryGreen: rgb(130 175 32);
+    --dark: #313131;
+    --gray: #d1cfcf;
+    --secondaryGray: #585858;
+    
+    p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0.88px;
+        line-height: 24px;
+        color: rgb(129, 126, 126);
+    }
+
+    .simcaButton{
+        background-color: var(--green);
+        border:none;
+        color: #fff;
+        padding:10px
+    }
+
+    .simcaButton:hover{
+        background-color: var(--secundaryGreen)
+    }
+}
