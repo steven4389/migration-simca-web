@@ -1,8 +1,18 @@
 <app-tabs [subModules]="subModules" (subModuleChosen)="subModuleSelectedListener($event)"></app-tabs>
 <div class="bodyOfModule">
-  <div *ngIf="subModuleSelected === subModules[0]">{{subModules[0]}}</div>
-  <div *ngIf="subModuleSelected === subModules[1]">{{subModules[1]}}</div>
-  <div *ngIf="subModuleSelected === subModules[2]">{{subModules[2]}}</div>
-  <div *ngIf="subModuleSelected === subModules[3]">{{subModules[3]}}</div>
-  <div *ngIf="subModuleSelected === subModules[4]">{{subModules[4]}}</div>
+  <div *ngIf="subModuleSelected === subModules[0]">
+    <app-plagues-and-diseases></app-plagues-and-diseases>
+  </div>
+  <div *ngIf="subModuleSelected === subModules[1]">
+    <app-cutting></app-cutting>
+  </div>
+  <div *ngIf="subModuleSelected === subModules[2]">
+    <app-seedtime></app-seedtime>
+  </div>
+  <div *ngIf="subModuleSelected === subModules[3]">
+    <app-traceability></app-traceability>
+  </div>
+  <div *ngIf="subModuleSelected === subModules[4]">
+    <app-mother-plants></app-mother-plants>
+  </div>
 </div>
